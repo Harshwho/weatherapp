@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ba9316d898.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Weather App using JS</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css'><link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="weather">
-            <h2 class="city"></h2>
-            <img src="sun.png" class="weatherIcon">
-            <h1 class="temp"></h1>
-            <h3 class="tempMaxMin"></h3>
-            <h3 class="description"></h3>
-            <div class="details">
-                <div class="col">
-                    <i class="fa-solid fa-water fa-2x"></i>
-                    <div>
-                        <p class="humidity"></p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <i class="fa-solid fa-wind fa-2x"></i>
-                    <div>
-                        <p class="wind"></p>
-                        <p>wind speed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="wrapper">
+  <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+  <section class="input-part">
+    <p class="info-txt"></p>
+    <div class="content">
+      <input type="text" spellcheck="false" placeholder="Enter city name" required>
+      <div class="separator"></div>
+      <button>Get Device Location</button>
     </div>
-    <script src="script.js"></script>
-</body>
+  </section>
+  <section class="weather-part">
+    <img src="" alt="Weather Icon">
+    <div class="temp">
+      <span class="numb">_</span>
+      <span class="deg">°</span>C
+    </div>
+    <div class="weather">_ _</div>
+    <div class="location">
+      <i class='bx bx-map'></i>
+      <span>_, _</span>
+    </div>
+    <div class="bottom-details">
+      <div class="column feels">
+        <i class='bx bxs-thermometer'></i>
+        <div class="details">
+          <div class="temp">
+            <span class="numb-2">_</span>
+            <span class="deg">°</span>C
+          </div>
+          <p>Feels like</p>
+        </div>
+      </div>
+      <div class="column humidity">
+        <i class='bx bxs-droplet-half'></i>
+        <div class="details">
+          <span>_</span>
+          <p>Humidity</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+  <script  src="script.js"></script>
 
+</body>
 </html>
